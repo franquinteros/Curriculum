@@ -7,8 +7,10 @@ import { DatospersonalesService } from '../services/datospersonales.service';
   styleUrls: ['./datos-personales.component.css']
 })
 export class DatosPersonalesComponent {
+  mensaje="";
   constructor(private miServicio:DatospersonalesService)
 {
-alert (this.miServicio.saludar());
+  this.mensaje=this.miServicio.saludar();
+  //alert (this.miServicio.saludar());
 }
 }
