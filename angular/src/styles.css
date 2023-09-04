@@ -6,34 +6,58 @@ p{
     box-shadow: 0 1px 8px black;
 }
 
+.container-header{
+    box-shadow: 0 1px 8px black;
+}
+
+.container-footer{
+    box-shadow: 0 1px 8px black;
+}
+
 .nombre{
     text-align:center;
 }
 
 .subTitulo{
-    background-color: darkgrey;
+    background-color:#efbd68;
+    box-shadow: 0 1px 8px black;
+    margin: 15px;
 }
 
 .exp{
-    background-color: rgb(146, 231, 210);
+    background-color: #efbd68;
+    margin: 15px;
+    box-shadow: 0 1px 8px black;
 }
 
 .trayectoria{
-    background-color: rgb(146, 231, 210);
+    background-color: #efbd68;
+    margin: 15px;
+    box-shadow: 0 1px 8px black;
 }
 
 .proyectos{
-    background-color: rgb(146, 231, 210);
+    background-color: #efbd68;
+    margin: 15px;
+    box-shadow: 0 1px 8px black;
 }
 
 .contacto{
-    background-color: rgb(133, 178, 204);
-    border-color:blue;
+    background-color: #efbd68;
+    margin: 15px;
+    box-shadow: 0 1px 8px black;
 }
 
+.sobre-mi{
+    background-color: #efbd68;
+    margin: 15px;
+    box-shadow: 0 1px 8px black;
+}
 
-.me{
-    background-color:rgb(133, 178, 204);
+.habilidades{
+    margin: 15px;
+    background-color:#efbd68;
+    box-shadow: 0 1px 8px black;
 }
 
 .img-foto{
@@ -60,13 +84,11 @@ p{
     margin: 25px;
 }
 
-.habilidades>p{
-    margin: 0px;
-    background-color:(133, 178, 204);
-}
-
 section>.progress{
-    margin-bottom: 15px;
+    margin: 5px;
+    margin-top: 5px;
+    margin-bottom: 25px;
+    box-shadow: 0 1px 8px black;
 }
 
 
