@@ -10,6 +10,7 @@ import { ExperienciaLaboralComponent } from './experiencia-laboral/experiencia-l
 import { TrayectoriaComponent } from './trayectoria/trayectoria.component';
 import { ProyectosComponent } from './proyectos/proyectos.component';
 import { HeaderComponent } from './header/header.component';
+import { HttpClientModule } from '@angular/common/http'
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { HeaderComponent } from './header/header.component';
     HeaderComponent,
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
