@@ -3,21 +3,21 @@
         {
             "proyectoUno": "Esquel QR",
             "caracteristicas": "Proyecto de carácter municipal, donde se pone en juego el uso y la implementación de los recursos tecnológicos para simplificar el manejo de la información diaria en la ciudad.",
-            "link": ""
+            "link": "https://www.esquel.gov.ar"
         },
         {
-            "proyectoUno": "Proyecto VCP",
-            "caracteristicas": "Proyecto de carácter grupal, donde se propone la organización de eventos nocturnos, los mismos asociados, y ubicados en la discoteca VER Disco Club.",
-            "link": ""
+            "proyectoDos": "Proyecto VCP",
+            "caracteristicasDos": "Proyecto de carácter grupal, donde se propone la organización de eventos nocturnos, los mismos asociados, y ubicados en la discoteca VER Disco Club.",
+            "linkDos": "https://proyectovcp.com.ar"
         },
         {
-            "proyectoUno": "Al Fallo Suplementos y Nutrición",
-            "caracteristicas": "Emprendimiento de carácter personal, el cual tiene como objetivo la venta de suplementos deportivos y el asesoramiento a clientes si es necesario. También el proporcionamiento de información de los mismos mediante redes sociales.",
-            "link": ""
+            "proyectoTres": "Al Fallo Suplementos y Nutrición",
+            "caracteristicasTres": "Emprendimiento de carácter personal, el cual tiene como objetivo la venta de suplementos deportivos y el asesoramiento a clientes si es necesario. También el proporcionamiento de información de los mismos mediante redes sociales.",
+            "linkTres": "https://www.instagram.com/alfallosuplementos/"
         },
         {
-            "proyectoUno": "Mates el Patasgónico",
-            "caracteristicas": "Emprendimiento de carácter personal, el cual tiene como objetivo la venta de productos regionales, entre los que se destacan, mates termos, bombillas, yerbas y materos.",
+            "proyectoCuatro": "Mates el Patagónico",
+            "caracteristicasCuatro": "Emprendimiento de carácter personal, el cual tiene como objetivo la venta de productos regionales, entre los que se destacan, mates termos, bombillas, yerbas y materos.",
             "link": ""
         }
     ]

@@ -2,18 +2,18 @@
     "experienciaLaboral": [
         {
             "experienciaUno": "Proyecto VCP",
-            "descripcion": "Organización y realización de eventos nocturnos y servicio de fiestas.",
-            "rol": "Administración, gestión de redes, atención al cliente, diseño gráfico."
+            "descripcionUno": "Organización y realización de eventos nocturnos y servicio de fiestas.",
+            "rolUno": "Administración, gestión de redes, atención al cliente, diseño gráfico."
         },
         {
             "experienciaDos": "Mates el Patagónico",
-            "descripcion": "Venta de mates, termos, bombillas, materos, yerbas y artículos regionales",
-            "rol": "Administración, gestión de redes, atención al cliente, fotografía y edición"
+            "descripcionDos": "Venta de mates, termos, bombillas, materos, yerbas y artículos regionales",
+            "rolDos": "Administración, gestión de redes, atención al cliente, fotografía y edición"
         },
         {
             "experienciaTres": "Al Fallo Suplementos",
-            "descripcion": "Venta de suplementos deportivos y asesoramiento",
-            "rol": "Administración, gestión de redes, atención al cliente, fotografía y edición, diseño gráfico, distribución"
+            "descripcionTres": "Venta de suplementos deportivos y asesoramiento",
+            "rolTres": "Administración, gestión de redes, atención al cliente, fotografía y edición, diseño gráfico, distribución"
         }
     ]
 }
