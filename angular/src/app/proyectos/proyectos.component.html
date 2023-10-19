@@ -1,38 +1,11 @@
-<section class="proyectos">
+<section *ngFor="let item of obtenerProyectos" class="proyectos">
   <h3>Proyectos</h3>
-  <p>{{proyectos.proyectoUno}}</p>
+  <p>{{item.proyecto}}</p>
   <p>
-    {{proyectos.caracteristicas}}
+    {{item.caracteristicas}}
     <span>
-      <a [href]="proyectos.link">Esquel QR</a>
+      
     </span>
   </p>
 
-  <p>{{proyectos.proyectoDos}}</p>
-  <p>
-    {{proyectos.caracteristicasDos}}
-    <span>
-      <a [href]="proyectos.linkDos">Proyecto VCP</a>
-    </span>
-  </p>
-  <p>
-
-    <p>{{proyectos.proyectoTres}}</p>
-    <p>
-      {{proyectos.caracteristicasTres}}
-      <span>
-        <a [href]="proyectos.linkTres">Al Fallo Suplementos y Nutrición</a>
-      </span>
-    </p>
-    <p>
-
-      <p>{{proyectos.proyectoCuatro}}</p>
-      <p>
-        {{proyectos.caracteristicasCuatro}}
-        <span>
-          <a [href]="proyectos.linkCuatro">Mates el Patagónico</a>
-        </span>
-      </p>
-      <p>
-
-      </section>
+</section>
