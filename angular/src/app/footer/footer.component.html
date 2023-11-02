@@ -2,9 +2,9 @@
   <div class="container-footer">
       <div class="row">
           <div class="col-sm-9 bg-secondary">
-              <section class="footer">
-                  <p class="escuela">{{footer.escuela}}</p>
-                  <p>{{footer.materia}}</p>
+              <section *ngFor="let item of footer" class="footer">
+                  <p class="escuela">{{item.datosFooter}}</p>
+                  <p>{{item.datosFooter}}</p>
               </section>
           </div>
           <div class="col-sm-3 bg-secondary">

@@ -7,13 +7,18 @@ import { CvService } from '../servicios/cv.service';
 })
 export class FooterComponent {
   footer: any;
-  constructor(private serviciocv: CvService) { }
-
-  ngOnInit(): void {
+  constructor(private serviciocv: CvService) {
     this.serviciocv.obtenerFooter().subscribe(
-      data => {
-        console.log(data["datosFooter"][0]);
-        this.footer = data["datosFooter"][0];
+      {
+        next: (data) => {
+          this.footer = data["datosFooter"];
+          console.log("datosFooter");
+          console.log(this.footer);
+        },
+        error: (err) => {
+          alert("Se ha producido un error. Por favor, intente nuevamente.");
+          console.error(err)
+        }
       }
     )
   }

@@ -7,13 +7,18 @@ import { CvService } from '../servicios/cv.service';
 })
 export class HeaderComponent {
   header: any;
-  constructor(private serviciocv: CvService) { }
-
-  ngOnInit(): void {
+  constructor(private serviciocv: CvService) {
     this.serviciocv.obtenerHeader().subscribe(
-      data => {
-        console.log(data["datosHeader"][0]);
-        this.header = data["datosHeader"][0];
+      {
+        next: (data) => {
+          this.header = data["datosHeader"];
+          console.log("datosHeader");
+          console.log(this.header);
+        },
+        error: (err) => {
+          alert("Se ha producido un error. Por favor, intente nuevamente.");
+          console.error(err)
+        }
       }
     )
   }

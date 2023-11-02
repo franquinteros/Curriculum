@@ -7,13 +7,18 @@ import { CvService } from '../servicios/cv.service';
 })
 export class TrayectoriaComponent {
   trayectoria: any;
-  constructor(private serviciocv: CvService) { }
-
-  ngOnInit(): void {
+  constructor(private serviciocv: CvService) {
     this.serviciocv.obtenerTrayectoria().subscribe(
-      data => {
-        console.log(data["trayectoria"][0]);
-        this.trayectoria = data["trayectoria"][0];
+      {
+        next: (data) => {
+          this.trayectoria = data["trayectoria"];
+          console.log("trayectoria");
+          console.log(this. trayectoria);
+        },
+        error: (err) => {
+          alert("Se ha producido un error. Por favor, intente nuevamente.");
+          console.error(err)
+        }
       }
     )
   }

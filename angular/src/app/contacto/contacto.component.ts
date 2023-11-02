@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component,} from '@angular/core';
 import { CvService } from '../servicios/cv.service';
 
 @Component({
@@ -6,15 +6,19 @@ import { CvService } from '../servicios/cv.service';
   templateUrl: './contacto.component.html',
   styleUrls: ['./contacto.component.css']
 })
-export class ContactoComponent implements OnInit {
+export class ContactoComponent {
   contacto: any;
-  constructor(private serviciocv: CvService) { }
-
-  ngOnInit(): void {
+  constructor(private serviciocv: CvService) {
     this.serviciocv.obtenerContacto().subscribe(
-      data => {
-        console.log(data["contacto"][0]);
-        this.contacto = data["contacto"][0];
+      {
+        next: (data) => {
+          this.contacto = data["contacto"];
+          console.log(data);
+        },
+        error: (err) => {
+          alert("Se ha producido un error, por favor, intente nuevamente");
+          console.error(err);
+        }
       }
     )
   }

@@ -1,11 +1,10 @@
-<section *ngFor="let item of obtenerProyectos" class="proyectos">
-  <h3>Proyectos</h3>
-  <p>{{item.proyecto}}</p>
+<h1>Proyectos</h1>
+<section *ngFor="let item of proyectos" class="proyectos">
+  <h4>{{item.proyecto}}</h4>
   <p>
     {{item.caracteristicas}}
     <span>
-      
+      <a [href]="item.link">{{item.link}}</a>
     </span>
   </p>
-
 </section>

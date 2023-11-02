@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component,} from '@angular/core';
 import { CvService } from '../servicios/cv.service';
 
 
@@ -7,15 +7,20 @@ import { CvService } from '../servicios/cv.service';
   templateUrl: './experiencia-laboral.component.html',
   styleUrls: ['./experiencia-laboral.component.css']
 })
-export class ExperienciaLaboralComponent implements OnInit {
+export class ExperienciaLaboralComponent {
   experiencia: any;
-  constructor(private serviciocv: CvService) { }
-
-  ngOnInit(): void {
+  constructor(private serviciocv: CvService) {
     this.serviciocv.obtenerExperiencia().subscribe(
-      data => {
-        console.log(data["experienciaLaboral"][0]);
-        this.experiencia = data["experienciaLaboral"][0];
+      {
+        next: (data) => {
+          this.experiencia = data["experienciaLaboral"];
+          console.log("experienciaLaboral");
+          console.log(this.experiencia);
+        },
+        error: (err) => {
+          alert("Se ha producido un error. Por favor, intente nuevamente.");
+          console.error(err)
+        }
       }
     )
   }

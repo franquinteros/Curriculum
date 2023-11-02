@@ -7,14 +7,14 @@ import { CvService } from '../servicios/cv.service';
 })
 
 export class ProyectosComponent {
-  obtenerProyectos: any;
+  proyectos: any;
   constructor(private serviciocv: CvService) {
     this.serviciocv.obtenerProyectos().subscribe(
       {
         next: (data) => {
-          this.obtenerProyectos = data["proyectos"];
+          this.proyectos = data["proyectos"];
           console.log("proyectos ");
-          console.log(this.obtenerProyectos);
+          console.log(this.proyectos);
         },
         error: (err) => {
           alert("Se ha producido un error. Por favor, intente nuevamente.");

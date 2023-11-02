@@ -1,20 +1,12 @@
-<section class="exp">
-    <h3>Experiencia Laboral</h3>
+<h1>Experiencia Laboral</h1>
+<section *ngFor="let item of experiencia" class="exp">
     <div>
-        <h4 class="expLab">{{experiencia.experienciaUno}}</h4>
-        <p>{{experiencia.descripcionUno}}</p>
-        <p>Rol: {{experiencia.rolUno}}</p>
-    </div>
-
-    <div>
-        <h4 class="expLab">{{experiencia.experienciaDos}}</h4>
-        <p>{{experiencia.descripcionDos}}</p>
-        <p>Rol: {{experiencia.rolDos}}</p>
-    </div>
-
-    <div>
-        <h4 class="expLab">{{experiencia.experienciaTres}}</h4>
-        <p>{{experiencia.descripcionTres}}</p>
-        <p>Rol: {{experiencia.rolTres}}</p>
+        <h4>{{item.experiencia}}</h4>
+        <p>
+            {{item.descripcion}}
+        </p>
+        <p>
+            {{item.rol}}
+        </p>
     </div>
 </section>

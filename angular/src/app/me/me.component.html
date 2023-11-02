@@ -1,5 +1,5 @@
-<section class="sobre-mi">
-    <h3>Sobre mí</h3>
-    <p>{{me.me}}</p>
-    <p>{{me.me1}}</p>
+<h1>Sobre mí</h1>
+<section *ngFor="let item of me" class="sobre-mi">
+    <p>{{item.me}}</p>
+    <p>{{item.me1}}</p>
 </section>

@@ -7,13 +7,18 @@ import { CvService } from '../servicios/cv.service';
 })
 export class MeComponent {
   me: any;
-  constructor(private serviciocv: CvService) { }
-
-  ngOnInit(): void {
+  constructor(private serviciocv: CvService) {
     this.serviciocv.obtenerMe().subscribe(
-      data => {
-        console.log(data["sobreMi"][0]);
-        this.me = data["sobremI"][0];
+      {
+        next: (data) => {
+          this.me = data["sobreMi"];
+          console.log("sobreMi");
+          console.log(this.me);
+        },
+        error: (err) => {
+          alert("Se ha producido un error. Por favor, intente nuevamente.");
+          console.error(err)
+        }
       }
     )
   }
